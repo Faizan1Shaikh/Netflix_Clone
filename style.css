@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Martel+Sans:wght@600&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Martel+Sans:wght@600&family=Poppins:wght@300;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main {
+    height: 80vh;
+    background-image: url("assets/images/bg.jpg");
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    position: relative;
+}
+
+.main .box {
+    height: 80vh;
+    width: 100%;
+    opacity: 0.70;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    max-width: 60vw;
+    height: 100px;
+}
+
+body {
+    background-color: black;
+}
+
+nav img {
+    color: red;
+    width: 130px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+
+}
+
+.hero {
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    position: relative;
+    font-family: "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    gap: 23px;
+    padding: 0 30px;
+}
+
+.hero> :first-child {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 48px;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.seperation {
+    background-color: rgb(58, 58, 58);
+    height: 7px;
+
+}
+
+.btn {
+    padding: 3px 8px;
+    cursor: pointer;
+    background-color: rgba(248, 243, 243, 0.089);
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    padding: 3px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+    font-weight: 400;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.main input {
+    padding: 13px 101px 7px 14px;
+    font-weight: 300;
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(165, 163, 163, 0.5);
+    color: white;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1300px ) {
+    
+    .first {
+        flex-wrap: wrap;
+    }
+   
+}
+
+.secImg {
+    position: relative;
+
+}
+
+.secImg img {
+    width: 555px;
+    position: relative;
+    z-index: 10;
+    margin-top: 8px;
+
+}
+
+.secImg video {
+    position: absolute;
+    top: 123px;
+    right: 55px;
+    
+}
+
+section.first > div {
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+}
+
+section.first > div :nth-child(1) {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+section.first > div :nth-child(2) {
+    font-size: 24px;
+    font-weight: normal;
+}
+.faq {
+   background-color: black;
+   color: white;
+   padding: 34px;
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 48px;
+}
+.faqbox:hover {
+    background-color: #414141;
+}
+.faqbox {
+    transition: all 1s ease-out;
+    font-size: 24px;
+    display: flex;
+    background-color: #2d2d2d;
+    padding: 20px;
+    max-width: 60vw;
+    margin: 34px auto;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.faqbox svg {
+    filter: invert(1);
+}
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 14px;
+}
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+@media screen and (max-width: 1300px) {
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        color: white;
+    }
+}
+footer .questions {
+    padding: 34px 0px;
+}
+.footer-items{
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer a {
+    
+    color: white;
+    font-size: 14px;
+}
